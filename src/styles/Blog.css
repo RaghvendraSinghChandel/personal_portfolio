@@ -1,0 +1,20 @@
+.blog-links ul {
+    list-style-type: none;
+  }
+  
+  .blog-links li {
+    margin: 10px 0;
+  }
+  
+  .blog-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 28px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .blog-link:hover {
+    transform: scale(0.9); /* Zoom-out effect */
+    color: #007bff; /* Change color on hover */
+  }
+  

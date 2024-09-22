@@ -1,0 +1,41 @@
+.skills {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #555;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .stars {
+    color: #f5c518;
+    display: flex;
+    gap: 0.2rem;
+  }
+  
+  .stars svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  

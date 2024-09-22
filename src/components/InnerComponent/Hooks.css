@@ -1,0 +1,14 @@
+    .heading-text {
+    font-size: 2rem; /* Balanced size */
+    font-weight: 600; /* Medium weight */
+    color: #333; /* Dark text for readability */
+    text-transform: capitalize; /* First letter of each word capitalized */
+    letter-spacing: 0.5px; /* Slight letter spacing for readability */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  .heading-text:hover {
+    color: #007bff; /* Change color on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+  }
+  

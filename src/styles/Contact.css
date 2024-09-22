@@ -1,0 +1,105 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  .contact-form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* form section  */
+  .hover-modal {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .hover-modal:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    background-color: #fff;
+    border-color: #007bff;
+  }
+  
+  .hover-modal input,
+  .hover-modal textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Prevents overflow due to padding */
+  }
+  
+  .hover-modal input:focus,
+  .hover-modal textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+  /* Social media link */
+  .social-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .social-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-links a:hover {
+    color: #0073e6;
+  }
+  
+  .social-links a svg {
+    margin-right: 0.5rem;
+  }
+  

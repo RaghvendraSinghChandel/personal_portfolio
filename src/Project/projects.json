@@ -1,0 +1,71 @@
+[
+    {
+      "title": "Hospital Management System",
+      "domain": "Healthcare",
+      "role": "QA Engineer (Manual, API, and Automation Testing)",
+      "overview": "Welcome to the Hospital Management System project! As a Quality Assurance (QA) Engineer, I played a crucial role in ensuring the quality and reliability of the software. My responsibilities encompassed manual, automation, and API testing, contributing significantly to the project's success.",
+      "rolesResponsibilities": {
+        "manualTesting": "I meticulously designed and executed manual test cases, uncovering and documenting 400+ bugs. This involved thorough testing of various aspects, including functionality, usability, and regression. Leveraged Jira as our bug management tool, ensuring seamless communication and collaboration with the development team. Utilized Zephyr as the test management tool to organize, plan, and track test activities. This facilitated efficient test case management and collaboration across the QA team. Jira served as our primary bug tracking tool, enabling streamlined bug reporting, tracking, and resolution. This tool played a pivotal role in maintaining a transparent and organized workflow.",
+        "automationTesting": "Automated 500+ test scripts using Cypress with the Mocha framework, enhancing efficiency and scalability. Integrated automation into the continuous testing pipeline, providing rapid feedback during the development process. Ensured comprehensive test coverage, allowing for faster releases without compromising on quality.",
+        "apiTesting": "Utilized Postman to design, execute, and automate comprehensive API test cases, ensuring the functionality, reliability, and security of the SmartShop Management System. Leveraged Postman’s Collection Runner for automated testing, seamlessly integrating these tests into the CI/CD pipeline for ongoing validation. Conducted in-depth performance monitoring and rigorous security checks, guaranteeing robust API performance and strict compliance with data protection standards."
+      },
+      "achievements": [
+        "Led the QA efforts for the project, ensuring timely delivery.",
+        "Automated key test cases, reducing manual testing time by 50%.",
+        "Performed API testing using Postman, ensuring API reliability."
+      ]
+    },
+    {
+      "title": "Card Swapping Trading Platform",
+      "domain": "Finance",
+      "role": "QA Engineer (Manual, Automation, and Performance Testing)",
+      "overview": "Welcome to the Card Swapping Trading Platform project! As a Quality Assurance (QA) Engineer, I played a pivotal role in ensuring the platform’s functionality and reliability. Card swapping is designed to facilitate seamless card swapping and trading, making it easier for users to manage their financial assets and optimize their trading strategies.",
+      "rolesResponsibilities": {
+        "manualTesting": "Conducted thorough manual testing of various swapping card features, identifying and documenting 300+ issues. Focused on critical functionalities including transactions, user authentication, and account management. Utilized tools such as Jira for bug tracking and Zyphre for test case management.",
+        "automationTesting": "Developed and maintained 300+ automated test scripts using Playwright, enhancing test coverage and efficiency. Integrated automation scripts into the CI/CD pipeline, facilitating continuous integration and delivery. Ensured automated tests covered key functionalities and security aspects of the application.",
+        "performanceTesting": "Employed Locust to conduct comprehensive performance testing, simulating high user loads to evaluate system scalability and responsiveness. Designed test scenarios to assess transaction processes, user authentication, and data handling under stress. Automated performance tests, ensuring continuous monitoring and optimization of system performance."
+      },
+      "achievements": [
+        "Enhanced test coverage by integrating automated tests for card swapping functionalities.",
+        "Reduced manual testing efforts by 40% through effective automation.",
+        "Enhanced system performance by identifying and resolving bottlenecks leading to improved API response times."
+      ]
+    },
+    {
+      "title": "SmartShop Management System",
+      "domain": "E-commerce",
+      "role": "QA Engineer (Manual, Automation, and API Testing)",
+      "overview": "Welcome to the SmartShop Management System project! As a Quality Assurance (QA) Engineer, I played a crucial role in ensuring the platform's seamless functionality and reliability. The SmartShop Management System is designed to allow users to compare prices of goods from various shops and restaurants, helping them make informed purchasing decisions. This innovative platform streamlines the shopping experience by providing real-time price comparisons, ensuring users get the best deals available across different stores. My responsibilities included thorough testing to ensure the system's accuracy, usability, and performance, contributing to its successful deployment.",
+      "rolesResponsibilities": {
+        "manualTesting": "Conducted comprehensive manual testing of various features within the SmartShop Management System, identifying and documenting 400+ issues. Focused on key functionalities, including price comparison, shopping cart management, and user authentication. Leveraged tools such as Jira for efficient bug tracking and Zephyr for meticulous test case management, ensuring a smooth and reliable user experience across the platform.",
+        "automationTesting": "Developed and maintained 350+ automated test scripts using Playwright, enhancing test coverage and efficiency. Integrated automation scripts into the CI/CD pipeline, facilitating continuous integration and delivery. Ensured automated tests covered key functionalities and security aspects of the application.",
+        "apiTesting": "Employed Locust to conduct comprehensive performance testing, simulating high user loads to evaluate system scalability and responsiveness. Designed test scenarios to assess transaction processes, user authentication, and data handling under stress. Automated performance tests, ensuring continuous monitoring and optimization of system performance."
+      },
+      "achievements": [
+        "Led the QA efforts for the project, ensuring timely delivery and successful deployment.",
+        "Automated key test cases using Playwright, reducing manual testing time by 50% and increasing testing efficiency.",
+        "Conducted comprehensive API testing with Postman, ensuring the reliability, performance, and security of the application’s APIs.",
+        "Implemented CI/CD integration for automated tests, facilitating continuous validation and faster feedback during the development cycle.",
+        "Developed detailed test plans and executed thorough manual testing, identifying and documenting over 400 issues and ensuring a robust user experience.",
+        "Coordinated with cross-functional teams to address critical issues and enhance overall software quality, leading to a 30% reduction in post-release defects."
+      ]
+    },
+    {
+      "title": "Social Media Application (Passes)",
+      "domain": "Social Media (Content Creator Platform)",
+      "role": "QA Engineer (Manual, API, and Automation Testing)",
+      "overview": "As the QA Engineer on the Passes project for a content creator platform, I was responsible for ensuring high-quality user experience and software reliability. My work encompassed manual testing, automation, API testing, and performance testing, which contributed significantly to the project’s successful launch. This project involved validating features that allowed content creators to offer exclusive content and services to their audience through digital passes.",
+      "rolesResponsibilities": {
+        "manualTesting": "I designed and executed detailed manual test cases, uncovering and documenting over 650 bugs. My testing focused on content creator functionalities such as subscription models, content access, and user interaction features. Leveraged Jira for effective bug management and communication, and Zephyr for test case management. My work ensured that content creators could seamlessly manage their exclusive content offerings while ensuring an optimal user experience.",
+        "automationTesting": "Automated 750+ test scripts using Cypress with the Mocha framework to accelerate testing of features like content creation, access control, and user subscriptions. By integrating automation into the continuous testing pipeline, I helped deliver quick feedback during development, speeding up releases while maintaining quality. Automation covered a wide range of scenarios, from user engagement to content distribution.",
+        "apiTesting": "Used Postman to create, execute, and automate API test cases, ensuring the functionality and security of APIs responsible for content creation, payment gateways, and user subscriptions. Integrated Postman tests into the CI/CD pipeline, ensuring continuous validation. Additionally, I performed performance and security monitoring to ensure that APIs supporting content creators were efficient and secure."
+      },
+      "achievements": [
+        "Led QA efforts to deliver a smooth and user-friendly platform for content creators and their audiences.",
+        "Automated key test cases related to content creation and user interaction, reducing manual testing by 50%.",
+        "Performed API testing with Postman, ensuring the reliable delivery of content and secure transactions between creators and users."
+      ]
+    }
+    
+  ]
+  

@@ -1,0 +1,32 @@
+/* Resume.css */
+.resume {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .resume-preview {
+    position: relative;
+  }
+  
+  .download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  iframe {
+    border: none;
+  }
+  
+  .resume-download {
+    margin: 20px;
+  }
+  
+  .hide-navbar .navbar {
+    display: none;
+  }
+  
