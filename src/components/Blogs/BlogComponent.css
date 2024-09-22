@@ -1,12 +1,31 @@
 
 .body {
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
-    margin: 20px;
-    padding: 20px;
+    margin:20px;
     background-color: white;
     align-items: center;
+    margin-bottom: 20px;
   }
+
+  .back-button-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns the icon to the left */
+    padding: 20px; /* Add padding to the container for spacing */
+  }
+  
+  .back-icon {
+    cursor: pointer;
+    font-size: 24px; /* Adjust size as needed */
+    color: #007bff; /* Change as needed */
+  }
+  
+  /* Optional: Add a hover effect */
+  .back-icon:hover {
+    color: #0056b3; /* Change as needed for hover effect */
+  }
+  
+  
 
   h4 {
     color: #027d21

@@ -13,9 +13,13 @@ function Blogs() {
           </Link>
         </li>
         <li>
-          <Link to="/blog/cypress-locators-and-custom-method" className="blog-link">
+          <Link to="/blog/cypress-locators-and-custom-methods" className="blog-link">
             Cypress Locators & Cypress Methods
           </Link>
+        </li>
+
+        <li>
+          Playwright Custom Method To Find Locators (In-progress)
         </li>
         {/* Add more blog links as needed */}
       </ul>
