@@ -50,3 +50,72 @@ test("This is a basic test example code",async () => {
   // close the browser
   await browser.close();
 })`;
+
+
+export const cypressLocatorsAndmethods = `// cypress/support/locators.js
+export const Locators = {
+  usernameField: '#username',
+  passwordField: '#password',
+  submitButton: 'button[type="submit"]',
+  errorMessage: '.error-message'
+};
+
+// cypress/support/commands.js
+import { Locators } from './locators';
+
+// Custom command to log in
+Cypress.Commands.add('login', (username, password) => {
+  cy.get(Locators.usernameField).type(username); // Type username
+  cy.get(Locators.passwordField).type(password); // Type password
+  cy.get(Locators.submitButton).click();         // Click submit button
+});
+
+// Custom command to verify error message
+Cypress.Commands.add('verifyErrorMessage', (expectedMessage) => {
+  cy.get(Locators.errorMessage).should('contain.text', expectedMessage);
+});
+
+
+// cypress/support/e2e.js
+import './commands';
+
+
+// cypress/e2e/login.spec.js
+describe('Login Page Test', () => {
+  it('Login with invalid credentials should display error message', () => {
+    // Visit the login page
+    cy.visit('https://example.com/login');
+
+    // Assert the page URL
+    cy.url().should('include', '/login');
+
+    // Assert the page title
+    cy.title().should('eq', 'Login - Example');
+
+    // Use the custom login command
+    cy.login('invalidUser', 'invalidPass');
+
+    // Verify error message using custom command
+    cy.verifyErrorMessage('Invalid username or password.');
+  });
+});
+
+## Structure of the Cypress Directories
+
+Cypress/
+│
+├── cypress/
+│   ├── fixtures/
+│   ├── e2e/
+│   │   └── login.spec.js  // Test spec file
+│   ├── plugins/
+│   ├── support/
+│   │   ├── commands.js    // Custom methods file
+│   │   ├── locators.js    // Locator definitions file
+│   │   └── e2e.js       // Support file to import commands
+│
+├── node_modules/
+├── cypress.json           // Cypress configuration file
+├── package.json           // Project dependencies and scripts
+└── README.md              // Optional: Project documentation
+`

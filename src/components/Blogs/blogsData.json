@@ -180,22 +180,37 @@
                 {
                   "title": "CSS Selectors",
                   "content": [
-                    "Cypress primarily relies on CSS selectors to interact with elements in the DOM. With Cypress, you can easily locate elements using the `cy.get()` function, which takes a CSS selector as an argument.",
-                    "Example: `cy.get('button.submit').click()`"
+                    "Cypress primarily relies on CSS selectors to interact with elements in the DOM. With Cypress, you can easily locate elements using the `cy.get()` function, which takes a CSS selector as an argument."
+                  ],
+                  "Example": [
+                    {
+                      "description": "Example for CSS Selector:",
+                      "code": "cy.get('button.submit').click();"
+                    }
                   ]
                 },
                 {
                   "title": "XPath Support",
                   "content": [
-                    "Although Cypress doesn't natively support XPath, you can add this capability through a plugin. XPath allows for more flexibility in locating elements, especially when working with complex DOM structures.",
-                    "Example: `cy.xpath('//button[contains(text(), `Submit`)]').click()`"
+                    "Although Cypress doesn't natively support XPath, you can add this capability through a plugin. XPath allows for more flexibility in locating elements, especially when working with complex DOM structures."
+                  ],
+                  "Example": [
+                    {
+                      "description": "Example for XPath Support:",
+                      "code": "cy.xpath('//button[contains(text(), `Submit`)]').click();"
+                    }
                   ]
                 },
                 {
                   "title": "Custom Locators",
                   "content": [
-                    "You can create custom locators by combining CSS selectors with Cypress commands. This approach allows you to define reusable locator strategies, especially for elements that don't have unique identifiers like IDs.",
-                    "Example: `cy.getByText('Submit')`"
+                    "You can create custom locators by combining CSS selectors with Cypress commands. This approach allows you to define reusable locator strategies, especially for elements that don't have unique identifiers like IDs."
+                  ],
+                  "Example": [
+                    {
+                      "description": "Example for Custom Locators:",
+                      "code": "cy.getByText('Submit');"
+                    }
                   ]
                 }
               ]
@@ -213,22 +228,37 @@
                 {
                   "title": "Login Functionality",
                   "content": [
-                    "One of the most common use cases for custom methods is handling repetitive actions like logging in. Instead of writing the same login steps in multiple tests, you can create a `login` custom command to simplify this process.",
-                    "Example: `Cypress.Commands.add('login', (username, password) => { cy.get('#username').type(username); cy.get('#password').type(password); cy.get('button[type=`submit`]').click(); })`"
+                    "One of the most common use cases for custom methods is handling repetitive actions like logging in. Instead of writing the same login steps in multiple tests, you can create a `login` custom command to simplify this process."
+                  ],
+                  "Example": [
+                    {
+                      "description": "Example for Login Functionality:",
+                      "code": "Cypress.Commands.add('login', (username, password) => { \n  cy.get('#username').type(username); \n  cy.get('#password').type(password); \n  cy.get('button[type=`submit`]').click(); \n});"
+                    }
                   ]
                 },
                 {
                   "title": "Handling Dynamic Elements",
                   "content": [
-                    "Sometimes, elements on a page are generated dynamically, making them harder to locate. Custom methods can help handle these cases by introducing strategies like waiting for elements to become visible before interacting with them.",
-                    "Example: `Cypress.Commands.add('waitForElement', (selector) => { cy.get(selector).should('be.visible'); })`"
+                    "Sometimes, elements on a page are generated dynamically, making them harder to locate. Custom methods can help handle these cases by introducing strategies like waiting for elements to become visible before interacting with them."
+                  ],
+                  "Example": [
+                    {
+                      "description": "Example for Handling Dynamic Elements:",
+                      "code": "Cypress.Commands.add('waitForElement', (selector) => { \n cy.get(selector).should('be.visible'); \n});"
+                    }
                   ]
                 },
                 {
                   "title": "Reusable Form Interactions",
                   "content": [
-                    "Another common scenario is interacting with forms across multiple pages or tests. By creating custom methods for filling out forms, you reduce code duplication and ensure consistency in test scripts.",
-                    "Example: `Cypress.Commands.add('fillForm', (formData) => { Object.keys(formData).forEach((field) => cy.get(`#${field}`).type(formData[field])); })`"
+                    "Another common scenario is interacting with forms across multiple pages or tests. By creating custom methods for filling out forms, you reduce code duplication and ensure consistency in test scripts."
+                  ],
+                  "Example": [
+                    {
+                      "description": "Example for Reusable Form Interactions:",
+                      "code": "Cypress.Commands.add('fillForm', (formData) => { \n Object.keys(formData).forEach((field) => \n cy.get(`#${field}`).type(formData[field])); \n});"
+                    }
                   ]
                 }
               ]
@@ -281,12 +311,12 @@
               ]
             },
             {
-              "section": "Cypress Code Examples"
+              "section": "Dealing With Real Scenario"
             }
           ],
           "conclusion": "In conclusion, Cypress's flexibility with locators and custom methods provides an excellent framework for building efficient, scalable test scripts. Whether you're using CSS selectors, XPath, or writing custom commands, Cypress offers a streamlined way to create, manage, and execute tests effectively."
         }
-      ]
+      ]      
     ]
 }
   
