@@ -17,6 +17,10 @@ function Blogs() {
             Cypress Locators & Cypress Methods
           </Link>
         </li>
+
+        <li>
+          Playwright Custom Method To Find Locators (In-progress)
+        </li>
         {/* Add more blog links as needed */}
       </ul>
     </div>

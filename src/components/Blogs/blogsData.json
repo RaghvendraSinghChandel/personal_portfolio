@@ -314,7 +314,7 @@
               "section": "Dealing With Real Scenario"
             }
           ],
-          "conclusion": "In conclusion, Cypress's flexibility with locators and custom methods provides an excellent framework for building efficient, scalable test scripts. Whether you're using CSS selectors, XPath, or writing custom commands, Cypress offers a streamlined way to create, manage, and execute tests effectively."
+          "conclusion": "In conclusion, Cypress's flexibility with locators and custom methods provides an excellent framework for building efficient, scalable test scripts. \n Whether you're using CSS selectors, XPath, or writing custom commands, Cypress offers a streamlined way to create, manage, and execute tests effectively"
         }
       ]      
     ]

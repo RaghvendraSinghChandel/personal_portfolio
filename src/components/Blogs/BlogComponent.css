@@ -1,11 +1,11 @@
 
 .body {
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
-    margin: 20px;
-    padding: 20px;
+    margin:20px;
     background-color: white;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   .back-button-container {

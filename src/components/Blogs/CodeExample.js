@@ -52,27 +52,45 @@ test("This is a basic test example code",async () => {
 })`;
 
 
-export const cypressLocatorsAndmethods = `// cypress/support/locators.js
-export const Locators = {
-  usernameField: '#username',
-  passwordField: '#password',
-  submitButton: 'button[type="submit"]',
-  errorMessage: '.error-message'
-};
+export const cypressLocatorsAndmethods = `make sure you add /// <reference types="cypress" /> on every file
+
+// cypress/support/locators.js
+
+class Locators {
+getUserNameField() {
+return cy.get('#username')
+}
+
+getPasswordField() {
+return cy.get('#password')
+}
+
+getSubmitButton() {
+return cy.get('button[type="submit"]')
+}
+
+getErrorMessage() {
+return cy.get('.error-message')
+}
+
+}
+export default Locators
 
 // cypress/support/commands.js
 import { Locators } from './locators';
 
+const locators = new Locators()
+
 // Custom command to log in
 Cypress.Commands.add('login', (username, password) => {
-  cy.get(Locators.usernameField).type(username); // Type username
-  cy.get(Locators.passwordField).type(password); // Type password
-  cy.get(Locators.submitButton).click();         // Click submit button
+  locators.getUserNameField().should("be.visible").type(username).should('have.value', username); // Type username
+  locator.getPasswordField().should("be.visible").type(password).should('have.value', password); // Type password
+  locators.getSubmitButton().should("be.visible").click();         // Click submit button
 });
 
 // Custom command to verify error message
 Cypress.Commands.add('verifyErrorMessage', (expectedMessage) => {
-  cy.get(Locators.errorMessage).should('contain.text', expectedMessage);
+  locators.getErrorMessage().should('contain.text', expectedMessage);
 });
 
 
